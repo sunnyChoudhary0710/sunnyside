@@ -2,6 +2,7 @@ import Carousel from "@/components/carousel/carousel";
 import Header from "@/components/header/header";
 import Ribbon from "@/components/ribbon/ribbon";
 import Overview from "@/components/overview/overview";
+import List from "@/components/list/list";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Ribbon />
       </div> */}
       {/* <Carousel /> */}
+      <List />
 
       {/* <main>This is main content area</main>
 

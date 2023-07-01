@@ -6,7 +6,7 @@ import Ribbon from "../ribbon/ribbon";
 const Overview = () => {
 	return (
 		<div className="relative">
-			<div className="max-w-screen-2xl m-auto flex px-5 flex-col gap-3 text-center my-12 lg:my-3 prose-xl  text-clamp lg:grid lg:grid-cols-2 lg:text-left lg:px-12">
+			<div className="max-w-screen-2xl m-auto flex px-5 flex-col gap-3 text-center my-12 lg:my-3 prose-xl text-clamp lg:grid lg:grid-cols-2 lg:text-left lg:px-12">
 				<div id="intro" className="flex flex-col gap-3 my-7 lg:mt-40 lg:gap-9">
 					<h3 className="text-port-pink-base font-special font-medium text-base m-0 lg:text-lg hover:cursor-default">
 						Sunny Choudhary
@@ -17,7 +17,7 @@ const Overview = () => {
 						</h1>
 						<span className="text-underliner"></span>
 					</div>
-					<p className="font-notosans z-20 font-normal text-base leading-8 text-port-pink-dark lg:text-lg lg:leading-8 hover:cursor-default">
+					<p className="backdrop-blur-sm font-notosans z-20 font-normal text-base leading-8 text-port-pink-dark lg:text-lg lg:leading-8 hover:cursor-default">
 						Hey there! I&apos;m a Front End designer and developer, and I&apos;m all about
 						creating awesome digital experiences. I&apos;ve got a knack for blending
 						design principles with coding wizardry to make things look good and

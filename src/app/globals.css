@@ -89,6 +89,18 @@ body {
   overflow-x: hidden;
 }
 
+.card-full {
+  left: 0 !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+  font-size: 32px;
+  box-shadow: 0 1px 26px rgba(0,0,0,.12);
+}
+
 img > svg {
   -webkit-text-stroke-color: aliceblue;
 }
