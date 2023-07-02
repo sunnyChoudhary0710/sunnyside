@@ -39,9 +39,8 @@ const Header = () => {
         </div>
 
         <nav className="md:flex gap-10 h-auto items-center hidden font-bold">
-          <a className="port-nav port-nav-hover">Projects</a>
-          <a className="port-nav port-nav-hover">About</a>
-          <a className="port-nav port-nav-hover">Career</a>
+          <a className="port-nav port-nav-hover" href="/">Home</a>
+          <a className="port-nav port-nav-hover" href="/projects">Projects and Career</a>
           <a className="port-nav port-nav-hover">Interests</a>
           <a className="port-nav port-nav-hover" href="/Sunny_Resume_2023.pdf">Download Resume</a>
         </nav>
@@ -51,8 +50,7 @@ const Header = () => {
           isHeaderOpen ? "transform-gpu translate-x-[0%]" : "translate-x-full"
         } flex flex-col gap-20 text-port-yellow-dark text-7xl px-16 py-11 items-center text-center`}
       >
-        <a className="relative inline-flex justify-center items-center rounded-full w-auto p-1 transition-all duration-300 mob-port-nav-hover">Projects</a>
-        <a className="relative inline-flex justify-center items-center rounded-full w-auto p-1 transition-all duration-300 mob-port-nav-hover">Career</a>
+        <a className="relative inline-flex justify-center items-center rounded-full w-auto p-1 transition-all duration-300 mob-port-nav-hover" href="/projects">Projects and Career</a>
         <a className="relative inline-flex justify-center items-center rounded-full w-auto p-1 transition-all duration-300 mob-port-nav-hover">Interests</a>
         <a className="relative inline-flex justify-center items-center rounded-full w-auto p-1 transition-all duration-300 mob-port-nav-hover" href="/Sunny_Resume_2023.pdf">Download Resume</a>
       </div>

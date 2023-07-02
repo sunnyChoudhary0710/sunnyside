@@ -85,12 +85,11 @@ export const Data_Array = [
 export const Experience_Data = [
 	{
 		heading: "Frontend Architect",
-		ctaText: "Show Case Study",
 		status: "Ongoing",
 		date: "Feb 2021 - Present",
-		description: "Designed and developed 80+ ReactJS component compatible for Assa Abloy",
+		description: "Designed and developed 80+ ReactJS component compatible with  AEM for Assa Abloy",
 		details: {
-			logo: '/assaabloy.png',
+			logo: '/assa-abloy-logo.png',
 			paragraph: [
 				"Designed and developed the entire frontend architecture for Assa Abloy's AEM-driven websites. Along with the architecture, I delivered more than 80+ standalone components, ranging from something as simple as a dropdown to something as complex as fully responsive headers.",
 				"The components were designed to be completely headless and work with any CRM tool. They were built using React and were exposed as a React library hosted on a private NPM. Fully responsive, themeable, WCAG 2.0-compliant, and optimized for search engines."
@@ -99,12 +98,11 @@ export const Experience_Data = [
 	},
 	{
 		heading: "Independent Contributor",
-		ctaText: "Show Case Study",
-		status: "Completed",
+		status: "Delivered",
 		date: "November 2020 - Feb 2021",
 		description: "Build and Ecomm website for BlueYonder using Material UI and Styled Components",
 		details: {
-			logo: '/blueyonder.png',
+			logo: '/blue-yonder-logo.svg',
 			paragraph: [
 				"While working with Barclays UK, I was responsible for the migration of over 200 small multichannel standalone applications built on outdated software like EJS and old JavaScript to the latest and faster technologies like ReactJS and TypeScript.",
 				"Every app was designed to be self-sufficient in terms of data pulling and styling, and 100% themeable. It took my team a solid 1.5 years of non-stop coding to finish the entire task, but it surely paid off by making the user experience faster and improved."
@@ -114,11 +112,11 @@ export const Experience_Data = [
 	{
 		heading: "Senior Frontend Developer",
 		ctaText: "Show Case Study",
-		status: "Completed",
+		status: "Delivered",
 		date: "July 2018 - November 2020",
 		description: "Migration of over 200 legacy software to latest tech-stack",
 		details: {
-			logo: '/barclays.png',
+			logo: '/barclays-logo.png',
 			paragraph: [
 				"While working with Barclays UK, I was responsible for the migration of over 200 small multichannel standalone applications built on outdated software like EJS and old JavaScript to the latest and faster technologies like ReactJS and TypeScript.",
 				"Every app was designed to be self-sufficient in terms of data pulling and styling, and 100% themeable. It took my team a solid 1.5 years of non-stop coding to finish the entire task, but it surely paid off by making the user experience faster and improved."
@@ -128,11 +126,11 @@ export const Experience_Data = [
 	{
 		heading: "Frontend Developer",
 		ctaText: "Show Case Study",
-		status: "Completed",
+		status: "Delivered",
 		date: "December 2016 - June 2018",
 		description: "Frontend developer at Digitate",
 		details: {
-			logo: '/barclays.png',
+			logo: '/tcs-logo.svg',
 			paragraph: [
 				"While working with Barclays UK, I was responsible for the migration of over 200 small multichannel standalone applications built on outdated software like EJS and old JavaScript to the latest and faster technologies like ReactJS and TypeScript.",
 				"Every app was designed to be self-sufficient in terms of data pulling and styling, and 100% themeable. It took my team a solid 1.5 years of non-stop coding to finish the entire task, but it surely paid off by making the user experience faster and improved."
