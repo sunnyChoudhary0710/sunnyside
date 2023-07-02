@@ -97,15 +97,15 @@ export const Experience_Data = [
 		}
 	},
 	{
-		heading: "Independent Contributor",
+		heading: "Frontend Consultant",
 		status: "Delivered",
 		date: "November 2020 - Feb 2021",
 		description: "Build and Ecomm website for BlueYonder using Material UI and Styled Components",
 		details: {
 			logo: '/blue-yonder-logo.svg',
 			paragraph: [
-				"While working with Barclays UK, I was responsible for the migration of over 200 small multichannel standalone applications built on outdated software like EJS and old JavaScript to the latest and faster technologies like ReactJS and TypeScript.",
-				"Every app was designed to be self-sufficient in terms of data pulling and styling, and 100% themeable. It took my team a solid 1.5 years of non-stop coding to finish the entire task, but it surely paid off by making the user experience faster and improved."
+				"Blue Yonder needed to launch an E-commerse website with features like live order tracking, Order Management, Curtomer Reviews and much more",
+				"As per clients requirement, Material UI from Google was  used as component library and the entire project wa delivered in 5 months."
 			] 
 		}
 	},
@@ -132,8 +132,9 @@ export const Experience_Data = [
 		details: {
 			logo: '/tcs-logo.svg',
 			paragraph: [
-				"While working with Barclays UK, I was responsible for the migration of over 200 small multichannel standalone applications built on outdated software like EJS and old JavaScript to the latest and faster technologies like ReactJS and TypeScript.",
-				"Every app was designed to be self-sufficient in terms of data pulling and styling, and 100% themeable. It took my team a solid 1.5 years of non-stop coding to finish the entire task, but it surely paid off by making the user experience faster and improved."
+				"Digitate is a leading AI automation tool for enterprisewhere I worked as a Front-end Solution Engineer. My job required me to design and develop an in-house online IDE which could be used to create and train knowledge models for Studio@Digitate.",
+				"During my tenure @ Studio, Digitate I helped create a framework for code review process, all working within the online IDE i.e. Studio.",
+				"I worked with technologies like AngularJS, Javascript, HTML and CSS to create beautiful interface for our users along with numerous D3 powered graphs for Admin Console."
 			] 
 		}
 	}
