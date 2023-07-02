@@ -1,6 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
-import Link from "../link/link";
+import { useState } from "react";
 
 const Header = () => {
   const [isHeaderOpen, setIsHeaderOpen] = useState(false);
@@ -9,12 +8,13 @@ const Header = () => {
   };
   return (
     <>
-      <header className="z-30 bg-port-yellow-light px-0 md:px-4 lg:h-24 lg:px-4 sm:px-0 flex justify-between items-center border-b-2 border-b-rose-50 max-w-screen-2xl m-auto">
+      <header className="z-30 bg-port-yellow-light px-0 md:px-4 lg:h-28 lg:px-12 sm:px-0 flex justify-between items-center border-b-2 border-b-rose-50 max-w-screen-2xl m-auto">
         <div className="h-auto flex items-center p-2">
           <img
-            className="w-20 h-auto object-contain cursor-pointer transition-transform hover:rotate-12 hover:scale-125"
-            src="/logo.webp"
+            className="w-20 h-auto object-contain cursor-pointer transition-transform hover:rotate-12 hover:scale-125 lg:w-32"
+            src="/port-logo.svg"
             alt="Sunny Side"
+            onClick={()=>{window.open('/', '_self')}}
           />
         </div>
         <div
