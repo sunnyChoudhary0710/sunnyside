@@ -51,9 +51,9 @@ const List = () => {
 											src={item.details.logo}
 											alt={item.heading}
 										></img>
-										{item.details.paragraph.map((item) => {
+										{item.details.paragraph.map((item, i) => {
 											return (
-												<p className="font-normal text-base m-0 leading-8 text-port-pink-dark lg:text-lg lg:leading-8 hover:cursor-default">
+												<p key={i} className="font-normal text-base m-0 leading-8 text-port-pink-dark lg:text-lg lg:leading-8 hover:cursor-default">
 													{item}
 												</p>
 											);
