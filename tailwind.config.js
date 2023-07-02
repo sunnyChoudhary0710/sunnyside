@@ -20,6 +20,7 @@ module.exports = {
         "port-yellow-ultra-dark": "#6d3035",
         "port-pink-base": "#f67473",
         "port-pink-dark": "#8a5453",
+        "port-grey": "#232323",
       },
       fontSize: {
         clamp: "clamp(1rem, 4vw, 2rem)",
@@ -27,6 +28,8 @@ module.exports = {
       animation: {
         "spin-slow": "spin 10s linear infinite",
         "repeat-itself": "marquee 10s linear infinite",
+        "fade-in": "fadeIn 0.2s linear",
+        "fade-out": "fadeOut 0.2s linear",
       },
       fontFamily: {
         notosans: ["Noto Sans"],
@@ -37,6 +40,14 @@ module.exports = {
           "0%": { transform: "translate(0, 0)" },
           "100%": { transform: "translate(-100%, 0)" },
         },
+        fadeOut: {
+          "0%": {opacity: 1},
+          "100%": {opacity: 0}
+        },
+        fadeIn: {
+          "0%": {opacity: 0},
+          "100%": {opacity: 1}
+        }
       },
       boxShadow: {
         "img-shadow": "0 0 8px 8px #fee3ce inset"

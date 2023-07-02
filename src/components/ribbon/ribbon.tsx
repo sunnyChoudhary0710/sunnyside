@@ -4,7 +4,6 @@ interface RibbonProps {
 }
 
 const Ribbon = (props: RibbonProps) => {
-  console.log(props.slow);
   return (
     <div>
       <p className="marquee w-full my-0 mx-auto overflow-hidden box-border hover:cursor-default">
