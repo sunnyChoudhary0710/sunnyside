@@ -7,9 +7,6 @@ const Header = () => {
   const openPanel = () => {
     setIsHeaderOpen(!isHeaderOpen);
   };
-  useEffect(() => {
-    console.log(isHeaderOpen);
-  }, [isHeaderOpen]);
   return (
     <>
       <header className="z-30 bg-port-yellow-light px-0 md:px-4 lg:h-24 lg:px-4 sm:px-0 flex justify-between items-center border-b-2 border-b-rose-50 max-w-screen-2xl m-auto">
@@ -50,7 +47,7 @@ const Header = () => {
         </nav>
       </header>
       <div
-        className={`absolute min-h-screen h-full w-screen z-30 bg-port-yellow-ultra-light transition-all ease-out duration-500  ${
+        className={`absolute overflow-hidden flex min-h-screen max-h-screen w-screen z-30 bg-port-yellow-ultra-light transition-all ease-out duration-500 lg:hidden ${
           isHeaderOpen ? "transform-gpu translate-x-[0%]" : "translate-x-full"
         } flex flex-col gap-20 text-port-yellow-dark text-7xl px-16 py-11 items-center text-center`}
       >

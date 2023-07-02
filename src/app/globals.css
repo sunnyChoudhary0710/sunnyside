@@ -64,9 +64,6 @@
   .animation-delay {
     animation-delay: 4s;
   }
-  .invisible-scroll{
-
-  }
 }
 
 :root {
@@ -90,15 +87,19 @@ body {
 }
 
 .card-full {
-  left: 0 !important;
-  top: 0 !important;
+  top: 50% !important;
+  left: 50% !important;
   right: 0 !important;
   bottom: 0 !important;
-  width: 100% !important;
-  height: 100% !important;
-  border-radius: 0 !important;
-  font-size: 32px;
-  box-shadow: 0 1px 26px rgba(0,0,0,.12);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90vw !important;
+  height: 90vh !important;
+  border-radius: 50px;
+  box-shadow: 0 0 20px 100px #888888 !important;
+  transform: translate(-50%, -50%);
 }
 
 img > svg {
@@ -116,3 +117,6 @@ img > svg {
 .port-nav {
   @apply relative cursor-pointer transition-all duration-200 p-2 text-port-yellow-ultra-dark;
 }
+
+
+
