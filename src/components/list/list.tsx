@@ -1,6 +1,6 @@
 "use client";
 import { Experience_Data } from "@/app/constants/constants";
-import { expandexperience } from "@/app/utils/utils";
+import { ObserverHandler, expandexperience } from "@/app/utils/utils";
 import { useEffect } from "react";
 
 const List = () => {
@@ -10,6 +10,18 @@ const List = () => {
 			"experience-article",
 			"active-experience-article"
 		);
+	}, []);
+	useEffect(() => {
+		let options = {
+			root: document,
+			rootMargin: "0px",
+			threshold: [0.9],
+		};
+		let observer = new IntersectionObserver(ObserverHandler, options);
+		let els = document.querySelectorAll("[data-observeforanimation]");
+		els.forEach((el) => {
+			observer.observe(el);
+		});
 	}, []);
 	return (
 		<>
@@ -24,9 +36,12 @@ const List = () => {
 				<div className="max-w-screen-2xl mx-auto grid grid-cols-1 gap-4 px-3 md:grid-cols-2 md:gap-6 lg:grid-cols-2 lg:gap-8 lg:px-6 lg:py-12">
 					{Experience_Data.map((item) => {
 						return (
+							<div className="opacity-0 " data-observeforanimation
+							data-class="animate-in-from-right animation-delay-100 animation-fill-mode-[both]">
 							<article
 								key={item.heading}
 								className="experience-article bg-port-yellow-light p-4 min-w-[300px] min-h-[200px] rounded-2xl shadow-lg  prose-xl transition-all duration-500 hover:shadow-2xl hover:cursor-pointer"
+								
 							>
 								<div className="flex flex-col items-start justify-start w-full">
 									<h2 className="m-0 text-port-pink-dark">{item.heading}</h2>
@@ -61,6 +76,7 @@ const List = () => {
 									</div>
 								</div>
 							</article>
+							</div>
 						);
 					})}
 				</div>

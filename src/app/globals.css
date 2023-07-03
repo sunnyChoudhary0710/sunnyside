@@ -94,8 +94,8 @@ body {
   display: flex;
   flex-direction: row;
   padding: 50px;
-  width: 90vw !important;
-  height: 90vh !important;
+  width: 85vw !important;
+  height: 85vh !important;
   border-radius: 15px;
   background-color: #fee3ce;
   box-shadow: 0 0 10px 10px white !important;

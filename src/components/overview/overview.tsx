@@ -11,13 +11,10 @@ const Overview = () => {
 		let options = {
 			root: document,
 			rootMargin: "0px",
-			threshold: [1],
+			threshold: [0.9],
 		};
-
 		let observer = new IntersectionObserver(ObserverHandler, options);
-
 		let els = document.querySelectorAll("[data-observeforanimation]");
-
 		els.forEach((el) => {
 			observer.observe(el);
 		});
@@ -43,8 +40,7 @@ const Overview = () => {
 					</p>
 					<div
 						id="action-zone"
-						className="animate-in-from-bottom animation-delay-1000 animation-fill-mode-backwards anima z-20 flex flex-col gap-5 justify-around"
-					>
+						className="animate-in-from-bottom animation-delay-1000 animation-fill-mode-backwards z-20 flex flex-col gap-5 justify-around">
 						<a
 							className=" text-center px-10 py-5 border-2 my-9 bg-black text-white rounded-full font-notosans text-xl transition-colors duration-300 lg:w-fit hover:bg-port-yellow-ultra-dark lg:my-5"
 							href="mailto:sun.c7@outlook.com?subject=Hi there, saw your portfolio. Let's chat!"
@@ -71,6 +67,7 @@ const Overview = () => {
 					<div
 						className="absolute opacity-0 right-0 -bottom-8 lg:bottom-16"
 						data-observeforanimation
+						data-class="animate-in-from-right animation-delay-100 animation-fill-mode-[both]"
 					>
 						<Testimonial />
 					</div>
