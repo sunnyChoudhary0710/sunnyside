@@ -1,9 +1,27 @@
+"use client";
 import Testimonial from "../testimonial/testimonial";
 import Image from "next/image";
 import { Placeholder_Image } from "@/app/constants/constants";
 import Ribbon from "../ribbon/ribbon";
+import { useEffect } from "react";
+import { ObserverHandler } from "@/app/utils/utils";
 
 const Overview = () => {
+	useEffect(() => {
+		let options = {
+			root: document,
+			rootMargin: "0px",
+			threshold: [1],
+		};
+
+		let observer = new IntersectionObserver(ObserverHandler, options);
+
+		let els = document.querySelectorAll("[data-observeforanimation]");
+
+		els.forEach((el) => {
+			observer.observe(el);
+		});
+	}, []);
 	return (
 		<div className="relative">
 			<div className="max-w-screen-2xl m-auto flex px-5 flex-col gap-3 text-center my-12 lg:my-3 prose-xl text-clamp lg:grid lg:grid-cols-2 lg:text-left lg:px-12">
@@ -18,10 +36,10 @@ const Overview = () => {
 						<span className="text-underliner"></span>
 					</div>
 					<p className="animate-in-from-bottom animation-delay-800 animation-fill-mode-backwards backdrop-blur-sm font-notosans z-20 font-normal text-base leading-8 text-port-pink-dark lg:text-lg lg:leading-8 hover:cursor-default">
-						Hey there! I&apos;m a Front End designer and developer, and I&apos;m all about
-						creating awesome digital experiences. I&apos;ve got a knack for blending
-						design principles with coding wizardry to make things look good and
-						work even better.
+						Hey there! I&apos;m a Front End designer and developer, and I&apos;m
+						all about creating awesome digital experiences. I&apos;ve got a
+						knack for blending design principles with coding wizardry to make
+						things look good and work even better.
 					</p>
 					<div
 						id="action-zone"
@@ -50,7 +68,10 @@ const Overview = () => {
 						alt="portrait"
 						placeholder="blur"
 					></Image>
-					<div className="animate-in-from-right animation-delay-1200 animation-fill-mode-backwards absolute right-0 -bottom-8 lg:bottom-16">
+					<div
+						className="absolute opacity-0 right-0 -bottom-8 lg:bottom-16"
+						data-observeforanimation
+					>
 						<Testimonial />
 					</div>
 				</div>
