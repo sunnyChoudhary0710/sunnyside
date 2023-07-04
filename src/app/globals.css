@@ -3,135 +3,133 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "Special";
-  src: url("/Noto_Sans/special.otf");
+	font-family: "Special";
+	src: url("/Noto_Sans/special.otf");
 }
 
 @font-face {
-  font-family: "Noto Sans";
-  src: url("/Noto_Sans/NotoSans-Light.ttf");
-  font-weight: 300;
+	font-family: "Noto Sans";
+	src: url("/Noto_Sans/NotoSans-Light.ttf");
+	font-weight: 300;
 }
 
 @font-face {
-  font-family: "Noto Sans";
-  src: url("/Noto_Sans/NotoSans-LightItalic.ttf");
-  font-weight: 300;
-  font-style: italic;
+	font-family: "Noto Sans";
+	src: url("/Noto_Sans/NotoSans-LightItalic.ttf");
+	font-weight: 300;
+	font-style: italic;
 }
 
 @font-face {
-  font-family: "Noto Sans";
-  src: url("/Noto_Sans/NotoSans-Regular.ttf");
-  font-weight: 400;
+	font-family: "Noto Sans";
+	src: url("/Noto_Sans/NotoSans-Regular.ttf");
+	font-weight: 400;
 }
 
 @font-face {
-  font-family: "Noto Sans";
-  src: url("/Noto_Sans/NotoSans-SemiBold.ttf");
-  font-style: normal;
-  font-weight: 600;
+	font-family: "Noto Sans";
+	src: url("/Noto_Sans/NotoSans-SemiBold.ttf");
+	font-style: normal;
+	font-weight: 600;
 }
 
 @font-face {
-  font-family: "Noto Sans";
-  src: url("/Noto_Sans/NotoSans-SemiBoldItalic.ttf");
-  font-style: italic;
-  font-weight: 600;
+	font-family: "Noto Sans";
+	src: url("/Noto_Sans/NotoSans-SemiBoldItalic.ttf");
+	font-style: italic;
+	font-weight: 600;
 }
 
 @font-face {
-  font-family: "Noto Sans";
-  src: url("/Noto_Sans/NotoSans-Bold.ttf");
-  font-style: normal;
-  font-weight: 700;
+	font-family: "Noto Sans";
+	src: url("/Noto_Sans/NotoSans-Bold.ttf");
+	font-style: normal;
+	font-weight: 700;
 }
 
 @layer utilities {
-  .port-nav-hover {
-    /* @apply cursor-pointer transition-all duration-200 p-2 bg-port-yellow-dark text-white rounded-md drop-shadow-md; */
-    @apply hover:cursor-pointer after:rounded-full after:content-[''] after:w-0 after:left-0 after:bottom-1 after:bg-port-pink-base after:absolute after:-rotate-2 after:h-1 after:transition-all hover:after:w-full;
-  }
-  .mob-port-nav-hover {
-    @apply hover:cursor-pointer after:content-[''] after:w-0 after:bottom-0 after:bg-port-pink-base after:absolute after:-rotate-2 after:h-1 after:transition-all hover:after:w-full;
-  }
-  .text-underliner {
-    @apply absolute w-8/12 h-2 rounded-lg right-0 left-0 mx-auto -rotate-2 bg-port-pink-base lg:mx-0;
-  }
-  .inline-text-underliner {
-    @apply absolute -bottom-0 h-1 rounded-lg right-0 left-0 mx-auto -rotate-2 bg-port-pink-base lg:mx-0;
-  }
-  .animation-delay {
-    animation-delay: 4s;
-  }
+	.port-nav-hover {
+		/* @apply cursor-pointer transition-all duration-200 p-2 bg-port-yellow-dark text-white rounded-md drop-shadow-md; */
+		@apply hover:cursor-pointer after:rounded-full after:content-[''] after:w-0 after:left-0 after:bottom-1 after:bg-port-pink-base after:absolute after:-rotate-2 after:h-1 after:transition-all hover:after:w-full;
+	}
+	.mob-port-nav-hover {
+		@apply hover:cursor-pointer after:content-[''] after:w-0 after:bottom-0 after:bg-port-pink-base after:absolute after:-rotate-2 after:h-1 after:transition-all hover:after:w-full;
+	}
+	.text-underliner {
+		@apply absolute w-8/12 h-2 rounded-lg right-0 left-0 mx-auto -rotate-2 bg-port-pink-base lg:mx-0;
+	}
+	.inline-text-underliner {
+		@apply absolute -bottom-0 h-1 rounded-lg right-0 left-0 mx-auto -rotate-2 bg-port-pink-base lg:mx-0;
+	}
+	.animation-delay {
+		animation-delay: 4s;
+	}
 }
 
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 255, 255, 255;
-  --background-end-rgb: 254, 228, 207;
+	--foreground-rgb: 255, 255, 255;
+	--background-start-rgb: 255, 255, 255;
+	--background-end-rgb: 254, 228, 207;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-start-rgb: 0, 0, 0;
+		--background-end-rgb: 0, 0, 0;
+	}
 }
 
 body {
-  min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
+	min-height: 100vh;
+	position: relative;
+	overflow-x: hidden;
 }
 
 .card-full {
-  top: 50% !important;
-  left: 50% !important;
-  right: 0 !important;
-  bottom: 0 !important;
-  display: flex;
-  flex-direction: row;
-  padding: 50px;
-  width: 85vw !important;
-  height: 85vh !important;
-  border-radius: 15px;
-  background-color: #fee3ce;
-  box-shadow: 0 0 10px 10px white !important;
-  transform: translate(-50%, -50%);
-  overflow: auto;
+	top: 50% !important;
+	left: 50% !important;
+	right: 0 !important;
+	bottom: 0 !important;
+	display: flex;
+	flex-direction: row;
+	padding: 50px;
+	width: 85vw !important;
+	height: 85vh !important;
+	border-radius: 15px;
+	background-color: #fee3ce;
+	box-shadow: 0 0 10px 10px white !important;
+	transform: translate(-50%, -50%);
+	overflow: auto;
 }
 
-.card-full .details{
-  display: flex;
+.card-full .details {
+	display: flex;
 }
 
-.flat{
-  cursor: auto;
-  width: 100%;
-  height: 100%;
+.flat {
+	cursor: auto;
+	width: 100%;
+	height: 100%;
 }
 
-.modal-open{
-  overflow: hidden;
+.modal-open {
+	overflow: hidden;
+	padding-right: 15px;
 }
 
 img > svg {
-  -webkit-text-stroke-color: aliceblue;
+	-webkit-text-stroke-color: aliceblue;
 }
 
-.invisibility-scroll::-webkit-scrollbar { 
-  display: none;  /* Safari and Chrome */
+.invisibility-scroll::-webkit-scrollbar {
+	display: none; /* Safari and Chrome */
 }
 
-@-ms-viewport{
-  width: device-width;
+@-ms-viewport {
+	width: device-width;
 }
 
 .port-nav {
-  @apply relative cursor-pointer transition-all duration-200 p-2 text-port-yellow-ultra-dark;
+	@apply relative cursor-pointer transition-all duration-200 p-2 text-port-yellow-ultra-dark;
 }
-
-
-
