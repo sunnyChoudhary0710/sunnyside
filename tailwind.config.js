@@ -7,6 +7,9 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			gridTemplateColumns: {
+				footer: "160px auto 200px",
+			},
 			backgroundImage: {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 				"gradient-conic":
@@ -20,7 +23,7 @@ module.exports = {
 				"port-yellow-ultra-dark": "#6d3035",
 				"port-pink-base": "#f67473",
 				"port-pink-dark": "#8a5453",
-				"port-grey": "#232323",
+				"port-grey": "#070707",
 			},
 			fontSize: {
 				clamp: "clamp(1rem, 4vw, 2rem)",
@@ -31,6 +34,8 @@ module.exports = {
 				"fade-in": "fadeIn 0.2s linear",
 				"fade-out": "fadeOut 0.2s linear",
 				"in-from-bottom": "inFromBottom 0.5s cubic-bezier(0, 0, 0.58, 1.0)",
+				"in-from-bottom-quick":
+					"inFromBottomQuick 0.3s cubic-bezier(0, 0, 0.58, 1.0)",
 				"in-from-right": "inFromRight 0.5s cubic-bezier(0, 0, 0.58, 1.0)",
 			},
 			fontFamily: {
@@ -52,6 +57,10 @@ module.exports = {
 				},
 				inFromBottom: {
 					"0%": { transform: "translateY(30px)", opacity: 0 },
+					"100%": { transform: "translateY(0)", opacity: 1 },
+				},
+				inFromBottomQuick: {
+					"0%": { transform: "translateY(10px)", opacity: 0 },
 					"100%": { transform: "translateY(0)", opacity: 1 },
 				},
 				inFromRight: {

@@ -1,3 +1,5 @@
+import { FormModel } from "@/app/types";
+
 export const expandexperience = (
 	containerId: string,
 	targetId: string,
@@ -12,19 +14,21 @@ export const expandexperience = (
 					if (document.getElementById(expandedElementId) !== null) {
 						return;
 					}
-					document.body.classList.toggle("modal-open");
+
 					const clone = card.cloneNode(true) as HTMLElement;
 					card.classList.toggle("flat");
 					clone.setAttribute("id", expandedElementId);
 					clone.style.position = "fixed";
 					if (card.parentElement) {
 						clone.style.left = card.parentElement.offsetLeft + "px";
-						clone.style.top = card.parentElement.offsetTop - window.scrollY + "px";
+						clone.style.top =
+							card.parentElement.offsetTop - window.scrollY + "px";
 						clone.style.width = card.parentElement.clientWidth + "px";
 						clone.style.height = card.parentElement.clientHeight + "px";
 					}
 					clone.style.zIndex = "40";
 					document.body.appendChild(clone);
+					document.body.classList.toggle("modal-open");
 					setTimeout(() => clone.classList.add("card-full"), 0);
 					clone.addEventListener("click", (e) => {
 						document.body.classList.toggle("modal-open");
@@ -42,9 +46,30 @@ export const ObserverHandler = (ob: Array<any>) => {
 	if (ob && ob.length > 0) {
 		ob.forEach((el) => {
 			if (el.isIntersecting) {
-				const animationClassList = (el.target.getAttribute('data-class')).split(' ');
+				const animationClassList = el.target
+					.getAttribute("data-class")
+					.split(" ");
 				el.target.classList.add(...animationClassList);
 			}
 		});
 	}
+};
+
+export const ValidateForm = (formData: FormModel) => {
+	let formVal = {
+		name: false,
+		email: false,
+		message: false,
+	};
+	if (!formData) {
+		return formVal;
+	}
+	if (!formData.name || !formData.message || !formData.email) {
+		return formVal;
+	}
+};
+
+export const IsEmailValid = (email: string) => {
+	let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	return pattern.test(email);
 };

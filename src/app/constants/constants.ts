@@ -81,61 +81,70 @@ export const Data_Array = [
 	},
 ];
 
-
 export const Experience_Data = [
 	{
 		heading: "Frontend Architect",
 		status: "Ongoing",
 		date: "Feb 2021 - Present",
-		description: "Designed and developed 80+ ReactJS component compatible with  AEM for Assa Abloy",
+		description:
+			"Designed and developed 80+ ReactJS component compatible with  AEM for Assa Abloy",
+		animationClass:
+			"animate-in-from-right animation-delay-100 animation-fill-mode-[both]",
 		details: {
-			logo: '/assa-abloy-logo.png',
+			logo: "/assa-abloy-logo.png",
 			paragraph: [
 				"Designed and developed the entire frontend architecture for Assa Abloy's AEM-driven websites. Along with the architecture, I delivered more than 80+ standalone components, ranging from something as simple as a dropdown to something as complex as fully responsive headers.",
-				"The components were designed to be completely headless and work with any CRM tool. They were built using React and were exposed as a React library hosted on a private NPM. Fully responsive, themeable, WCAG 2.0-compliant, and optimized for search engines."
-			] 
-		}
+				"The components were designed to be completely headless and work with any CRM tool. They were built using React and were exposed as a React library hosted on a private NPM. Fully responsive, themeable, WCAG 2.0-compliant, and optimized for search engines.",
+			],
+		},
 	},
 	{
 		heading: "Frontend Consultant",
 		status: "Delivered",
-		date: "November 2020 - Feb 2021",
-		description: "Build and Ecomm website for BlueYonder using Material UI and Styled Components",
+		date: "Nov 2020 - Feb 2021",
+		description:
+			"Build and Ecomm website for BlueYonder using Material UI and Styled Components",
+		animationClass:
+			"animate-in-from-right animation-delay-300 animation-fill-mode-[both]",
 		details: {
-			logo: '/blue-yonder-logo.svg',
+			logo: "/blue-yonder-logo.svg",
 			paragraph: [
 				"Blue Yonder needed to launch an E-commerse website with features like live order tracking, Order Management, Curtomer Reviews and much more",
-				"As per clients requirement, Material UI from Google was  used as component library and the entire project wa delivered in 5 months."
-			] 
-		}
+				"As per clients requirement, Material UI from Google was  used as component library and the entire project wa delivered in 5 months.",
+			],
+		},
 	},
 	{
 		heading: "Senior Frontend Developer",
 		ctaText: "Show Case Study",
 		status: "Delivered",
-		date: "July 2018 - November 2020",
+		date: "July 2018 - Nov 2020",
 		description: "Migration of over 200 legacy software to latest tech-stack",
+		animationClass:
+			"animate-in-from-right animation-delay-100 animation-fill-mode-[both]",
 		details: {
-			logo: '/barclays-logo.png',
+			logo: "/barclays-logo.png",
 			paragraph: [
 				"While working with Barclays UK, I was responsible for the migration of over 200 small multichannel standalone applications built on outdated software like EJS and old JavaScript to the latest and faster technologies like ReactJS and TypeScript.",
-				"Every app was designed to be self-sufficient in terms of data pulling and styling, and 100% themeable. It took my team a solid 1.5 years of non-stop coding to finish the entire task, but it surely paid off by making the user experience faster and improved."
-			] 
-		}
+				"Every app was designed to be self-sufficient in terms of data pulling and styling, and 100% themeable. It took my team a solid 1.5 years of non-stop coding to finish the entire task, but it surely paid off by making the user experience faster and improved.",
+			],
+		},
 	},
 	{
 		heading: "Frontend Developer",
 		ctaText: "Show Case Study",
 		status: "Delivered",
-		date: "December 2016 - June 2018",
+		date: "Dec 2016 - June 2018",
 		description: "Frontend developer at Digitate",
+		animationClass:
+			"animate-in-from-right animation-delay-300 animation-fill-mode-[both]",
 		details: {
-			logo: '/tcs-logo.svg',
+			logo: "/tcs-logo.svg",
 			paragraph: [
 				"Digitate is a leading AI automation tool for enterprisewhere I worked as a Front-end Solution Engineer. My job required me to design and develop an in-house online IDE which could be used to create and train knowledge models for Studio@Digitate.",
 				"During my tenure @ Studio, Digitate I helped create a framework for code review process, all working within the online IDE i.e. Studio.",
-				"I worked with technologies like AngularJS, Javascript, HTML and CSS to create beautiful interface for our users along with numerous D3 powered graphs for Admin Console."
-			] 
-		}
-	}
-]
+				"I worked with technologies like AngularJS, Javascript, HTML and CSS to create beautiful interface for our users along with numerous D3 powered graphs for Admin Console.",
+			],
+		},
+	},
+];
