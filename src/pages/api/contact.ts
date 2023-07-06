@@ -40,61 +40,31 @@ const Contact = async (req: any, res: any) => {
 
 		await new Promise((resolve, reject) => {
 			// send mail
-			transporter.sendMail(mailData, (err: any, info: any) => {
+			transporter.sendMail(mailData, async (err: any, info: any) => {
 				if (err) {
 					console.error(err);
 					reject(err);
 				} else {
 					if (info.rejected && info.rejected.length === 0) {
-						console.log(
-							"++++++++++++++++++Email received. Initiating Welcome email to sender+++++++++++++++++++++"
-						);
-						fetch("https://www.devsunny.in/api/mail", {
+						console.log("Email received. Initiating Welcome email to sender");
+						let response = await fetch("http://localhost:3000/api/mail", {
 							method: "POST",
 							body: JSON.stringify(data),
 							headers: {
 								"Content-Type": "application/json",
 								Accept: "application/json",
 							},
-						})
-							.then((data) => {
-								console.log(data);
-							})
-							.then((error) => {
-								console.log(error);
-							});
+						});
+						if (response?.ok) {
+							console.log("Sending welcome email was a success!");
+						} else {
+							console.log("Sending welcome email failed!");
+						}
 					}
 					resolve(info);
 				}
 			});
 		});
-
-		// transporter.sendMail(mailData, function (err: any, info: any) {
-		// 	if (err) {
-		// 		res.end("fail");
-		// 		console.log(err);
-		// 	} else {
-		// 		if (info.rejected && info.rejected.length === 0) {
-		// 			console.log(
-		// 				"++++++++++++++++++Email received. Initiating Welcome email to sender+++++++++++++++++++++"
-		// 			);
-		// 			fetch("https://www.devsunny.in/api/mail", {
-		// 				method: "POST",
-		// 				body: JSON.stringify(data),
-		// 				headers: {
-		// 					"Content-Type": "application/json",
-		// 					Accept: "application/json",
-		// 				},
-		// 			})
-		// 				.then((data) => {
-		// 					console.log(data);
-		// 				})
-		// 				.then((error) => {
-		// 					console.log(error);
-		// 				});
-		// 		}
-		// 	}
-		// });
 		res.send("success");
 	} catch (error) {
 		console.log(error);
