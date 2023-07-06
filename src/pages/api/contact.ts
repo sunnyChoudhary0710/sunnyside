@@ -23,6 +23,18 @@ const Contact = (req: any, res: any) => {
 			text: `${data.name} wants to reach out. Email id is ${data.email}. Here's the message.../n ${data.message}`,
 			html: `<p style='margin:10px;background-color:"pink";color:"white"'>${data.message}</p>`,
 		};
+		console.log({
+			port: process.env.SMTP_PORT,
+			host: process.env.SMTP_HOST,
+			auth: {
+				user: process.env.USERNAME,
+				pass: process.env.PASSWORD,
+			},
+			tls: {
+				ciphers: process.env.CIPHER,
+			},
+			secure: false,
+		});
 		console.log(mailData);
 		transporter.sendMail(mailData, function (err: any, info: any) {
 			if (err) {
