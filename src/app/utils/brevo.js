@@ -8,14 +8,15 @@ var apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 const brevo = async (sendSmtpEmail) => {
 	//await new Promise((resolve, reject) => {
 		// send mail
+		console.log('Sending Welcome Mail via Brevo Transaction Email API')
 		await apiInstance.sendTransacEmail(sendSmtpEmail).then(
 			function (data) {
+				console.log('Brevo Transaction Email API was a SUCCESS')
 				return true;
-				resolve(data);
 			},
 			function (error) {
+				console.log('Brevo Transaction Email API was a FAILURE')
 				return false;
-				reject(err);
 			}
 		);
 	//});

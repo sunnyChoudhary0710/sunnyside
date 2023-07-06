@@ -19,8 +19,6 @@ const Mailer = (req: any, res: any) => {
 			text: data.message,
 		},
 	};
-  console.log('++++++++++++++Sending Welcome Mail with below logged information++++++++++++++++++')
-  console.log(sendSmtpEmail);
 	brevo(sendSmtpEmail);
 	res.send("success");
 };
