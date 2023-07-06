@@ -6,9 +6,9 @@ apiKey.apiKey = process.env.NEXT_PUBLIC_MAILER_API_KEY;
 var apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
 
 const brevo = async (sendSmtpEmail) => {
-	await new Promise((resolve, reject) => {
+	//await new Promise((resolve, reject) => {
 		// send mail
-		apiInstance.sendTransacEmail(sendSmtpEmail).then(
+		await apiInstance.sendTransacEmail(sendSmtpEmail).then(
 			function (data) {
 				return true;
 				resolve(data);
@@ -18,7 +18,7 @@ const brevo = async (sendSmtpEmail) => {
 				reject(err);
 			}
 		);
-	});
+	//});
 };
 
 module.exports = brevo;
