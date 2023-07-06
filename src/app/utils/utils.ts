@@ -1,3 +1,5 @@
+import { FormModel } from "@/app/types";
+
 export const expandexperience = (
 	containerId: string,
 	targetId: string,
@@ -51,4 +53,23 @@ export const ObserverHandler = (ob: Array<any>) => {
 			}
 		});
 	}
+};
+
+export const ValidateForm = (formData: FormModel) => {
+	let formVal = {
+		name: false,
+		email: false,
+		message: false,
+	};
+	if (!formData) {
+		return formVal;
+	}
+	if (!formData.name || !formData.message || !formData.email) {
+		return formVal;
+	}
+};
+
+export const IsEmailValid = (email: string) => {
+	let pattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+	return pattern.test(email);
 };

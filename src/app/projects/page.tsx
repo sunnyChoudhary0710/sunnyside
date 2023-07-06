@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 import List from "@/components/list/list";
 
@@ -8,6 +9,7 @@ export default function Project() {
 				<Header />
 			</div>
 			<List/>
+			<Footer />
 		</>
 	);
 }

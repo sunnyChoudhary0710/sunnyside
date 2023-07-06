@@ -93,7 +93,6 @@ body {
 	bottom: 0 !important;
 	display: flex;
 	flex-direction: row;
-	padding: 50px;
 	width: 85vw !important;
 	height: 85vh !important;
 	border-radius: 15px;

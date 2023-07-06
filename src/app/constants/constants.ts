@@ -101,7 +101,7 @@ export const Experience_Data = [
 	{
 		heading: "Frontend Consultant",
 		status: "Delivered",
-		date: "November 2020 - Feb 2021",
+		date: "Nov 2020 - Feb 2021",
 		description:
 			"Build and Ecomm website for BlueYonder using Material UI and Styled Components",
 		animationClass:
@@ -118,7 +118,7 @@ export const Experience_Data = [
 		heading: "Senior Frontend Developer",
 		ctaText: "Show Case Study",
 		status: "Delivered",
-		date: "July 2018 - November 2020",
+		date: "July 2018 - Nov 2020",
 		description: "Migration of over 200 legacy software to latest tech-stack",
 		animationClass:
 			"animate-in-from-right animation-delay-100 animation-fill-mode-[both]",
@@ -134,7 +134,7 @@ export const Experience_Data = [
 		heading: "Frontend Developer",
 		ctaText: "Show Case Study",
 		status: "Delivered",
-		date: "December 2016 - June 2018",
+		date: "Dec 2016 - June 2018",
 		description: "Frontend developer at Digitate",
 		animationClass:
 			"animate-in-from-right animation-delay-300 animation-fill-mode-[both]",
