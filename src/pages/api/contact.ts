@@ -47,7 +47,7 @@ const Contact = async (req: any, res: any) => {
 				} else {
 					if (info.rejected && info.rejected.length === 0) {
 						console.log("Email received. Initiating Welcome email to sender");
-						let response = await fetch("http://localhost:3000/api/resend", {
+						let response = await fetch("https://www.devsunny.in/api/resend", {
 							method: "POST",
 							body: JSON.stringify(data),
 							headers: {
