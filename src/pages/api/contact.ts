@@ -55,14 +55,6 @@ const Contact = async (req: any, res: any) => {
 								Accept: "application/json",
 							},
 						});
-						// let response = await fetch("https://www.devsunny.in/api/mail", {
-						// 	method: "POST",
-						// 	body: JSON.stringify(data),
-						// 	headers: {
-						// 		"Content-Type": "application/json",
-						// 		Accept: "application/json",
-						// 	},
-						// });
 						if (response?.ok) {
 							console.log("Sending welcome email was a success!");
 						} else {

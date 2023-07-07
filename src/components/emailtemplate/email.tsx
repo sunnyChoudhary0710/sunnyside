@@ -1,14 +1,10 @@
 const Email = (props: any) => {
 	return (
-		<div
-			style={{ backgroundColor: "rgb(254 227 206", width: "100%" }}
-			className="prose-xl"
-		>
-			<section
+		<div style={{ backgroundColor: "rgb(254 227 206)", width: "100%" }}>
+			<div
 				style={{
-					display: "flex",
-					flexDirection: "column",
-					justifyContent: "center",
+					width: "100%",
+					margin: "auto",
 					alignItems: "center",
 					textAlign: "center",
 					padding: "36px 24px 36px 24px",
@@ -17,19 +13,22 @@ const Email = (props: any) => {
 				<img
 					style={{
 						height: "auto",
+						margin: "auto",
 						width: "192px",
+						marginBottom: "48px",
 					}}
-					src="https://www.devsunny.in/port-logo.svg"
+					src="https://www.devsunny.in/email-logo.png"
 					alt="sunny logo"
 				/>
 				<h1
 					style={{
+						marginTop: "92px",
 						marginBottom: "8px",
 						color: "rgb(109 48 53)",
 						fontSize: "2.8rem",
 					}}
 				>
-					Hi {props.name}!
+					Hi, {props.name}!
 				</h1>
 				<h3
 					style={{
@@ -64,23 +63,20 @@ const Email = (props: any) => {
 					style={{
 						height: "auto",
 						width: "auto",
+						margin: "auto",
 					}}
 					src="https://www.devsunny.in/email.png"
 					alt="email banner"
 				/>
-			</section>
-			<section
+			</div>
+			<div
 				style={{
-					display: "flex",
-					flexDirection: "column",
-					justifyContent: "center",
 					alignItems: "center",
 					textAlign: "center",
 					padding: "24px",
 					backgroundColor: "rgb(109 48 53)",
 					color: "rgb(254 227 206)",
 				}}
-				className="flex flex-col px-6 py-6 text-center bg-port-yellow-ultra-dark text-port-yellow-light"
 			>
 				<h5
 					style={{
@@ -97,7 +93,7 @@ const Email = (props: any) => {
 				>
 					Gurugram, India
 				</h6>
-			</section>
+			</div>
 		</div>
 	);
 };

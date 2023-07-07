@@ -8,7 +8,7 @@ const ResendMailer = async (req: any, res: any) => {
 	let mailerData = {
 		from: "sunny@devsunny.in",
 		to: [data.email],
-		subject: "Thanks for getting in touch",
+		subject: `${data.name}, Thanks for reaching out.`,
 		react: Email({ name: data.name }),
 	};
 	try {
