@@ -112,7 +112,6 @@ body {
 	height: 100%;
 }
 
-
 .modal-open {
 	overflow: hidden;
 	padding-right: 15px;
@@ -132,4 +131,11 @@ img > svg {
 
 .port-nav {
 	@apply relative cursor-pointer transition-all duration-200 p-2 text-port-yellow-ultra-dark;
+}
+
+@media screen and (max-width: 1200px) {
+	.modal-open {
+		overflow: hidden;
+		padding-right: 0;
+	}
 }
