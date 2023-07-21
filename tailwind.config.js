@@ -14,6 +14,10 @@ module.exports = {
 				"gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
 				"gradient-conic":
 					"conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+				"img-gaming": "url('/gamer.jpeg')",
+				"img-coding": "url('/coder.jpeg')",
+				"img-travelling": "url('/traveller.jpeg')",
+				"img-designing": "url('/designer.jpeg')",
 			},
 			colors: {
 				"port-bg-base": "#cb8c8f",

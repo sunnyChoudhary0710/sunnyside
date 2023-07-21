@@ -8,8 +8,6 @@ export default function Project() {
 		<>
 			<div className="relative font-sans bg-port-yellow-light overflow-hidden z-40">
 				<Header />
-			</div>
-			<div className="relative font-sans py-16 bg-port-yellow-light">
 				<Contact />
 			</div>
 			<Footer />

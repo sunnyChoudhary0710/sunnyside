@@ -14,7 +14,7 @@ const Testimonial = () => {
                     <img className="w-14 h-14 m-0 flex-1 rounded-full" src="/PRAG.jpeg" alt="Avatar"/>
                     <div className="flex flex-col flex-grow">
                         <span className="font-bold text-base">Pragati Balhara</span>
-                        <span className="font-semibold text-xs">Owner of PRAG by Pragati Fashion Brand</span>
+                        <span className="font-semibold text-xs">Human Resource, Career Connect</span>
                     </div>
                 </div>
             </aside>
