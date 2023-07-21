@@ -70,7 +70,7 @@ const Contact = () => {
 	return (
 		<>
 			{!loadSuccessPage && (
-				<div className="flex flex-col gap-8 justify-center items-center text-start bg-port-yellow-light max-w-screen-2xl mx-auto px-4 prose-2xl lg:px-12">
+				<div className="flex flex-col gap-8 justify-center items-center text-start bg-port-yellow-light max-w-screen-2xl mx-auto py-12 px-4 prose-2xl lg:px-12">
 					<h1 className="animate-in-from-bottom animation-fill-mode-backwards text-port-yellow-ultra-dark">
 						Get In{" "}
 						<span className="relative after:inline-text-underliner">Touch</span>

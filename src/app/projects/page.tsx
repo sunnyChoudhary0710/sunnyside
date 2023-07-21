@@ -7,8 +7,8 @@ export default function Project() {
 		<>
 			<div className="relative font-sans bg-port-yellow-light overflow-x-hidden z-40">
 				<Header />
+				<List />
 			</div>
-			<List/>
 			<Footer />
 		</>
 	);
