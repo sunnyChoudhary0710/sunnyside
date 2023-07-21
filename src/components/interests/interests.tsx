@@ -29,7 +29,7 @@ const Interests = () => {
 			<div className="flex flex-col gap-5 lg:gap-7">
 				{items.map((item) => {
 					return (
-						<article className={`bg-cover ${item.imageClass} transition-all duration-300 rounded-2xl shadow-xl hover:shadow-2xl`}>
+						<article key={item.title} className={`bg-cover ${item.imageClass} transition-all duration-300 rounded-2xl shadow-xl hover:shadow-2xl`}>
 							<div className={`min-h-[500px] w-full`}>
 								<h3>{item.title}</h3>
                                 <p>{item.desc}</p>
