@@ -83,13 +83,30 @@ export const Data_Array = [
 
 export const Experience_Data = [
 	{
-		heading: "Frontend Architect",
+		heading: "Frontend Architect and Tech Lead",
 		status: "Ongoing",
-		date: "Feb 2021 - Present",
+		date: "June 2024 - Present",
+		description:
+			"Currently developing a collaborative pricing-upgrade tool that empowers clients to efficiently manage inventory pricing through big data analytics and innovative charting solutions",
+		animationClass:
+			"animate-in-from-right animation-delay-100 animation-fill-mode-[both]",
+		details: {
+			logo: "/assa-abloy-logo.png",
+			paragraph: [
+				"We are introducing ‘Optimus,’ a cutting-edge tool that replaces the outdated Excel-based method for pricing upgrades. With its intuitive interface, Optimus streamlines the task, making it significantly easier for our users.",
+				"Optimus serves as a centralized hub for users to log in, engage in discussions, and efficiently manage the annual pricing process for their inventory. Leveraging market standards and historical analytics data, it enables strategic planning, ensuring optimal inventory availability and logical pricing. Our collaborative approach empowers clients to achieve their yearly budget and revenue targets seamlessly.",
+				"'Optimus,’ leverages advanced technologies such as Ag-Grid and Highcharts to create a user-friendly interface. With an extensive user permission framework and multilingual support, it enhances control and collaboration efficiency. Additionally, our robust progress tracker, complete with timely reminders and a friendly ‘nudging’ tool, ensures clients achieve their tasks accurately and on time"
+			],
+		},
+	},
+	{
+		heading: "Frontend Architect",
+		status: "Delivered",
+		date: "Feb 2021 - May 2024",
 		description:
 			"Designed and developed 80+ ReactJS component compatible with  AEM for Assa Abloy",
 		animationClass:
-			"animate-in-from-right animation-delay-100 animation-fill-mode-[both]",
+			"animate-in-from-right animation-delay-300 animation-fill-mode-[both]",
 		details: {
 			logo: "/assa-abloy-logo.png",
 			paragraph: [
@@ -105,7 +122,7 @@ export const Experience_Data = [
 		description:
 			"Build and Ecomm website for BlueYonder using Material UI and Styled Components",
 		animationClass:
-			"animate-in-from-right animation-delay-300 animation-fill-mode-[both]",
+			"animate-in-from-right animation-delay-100 animation-fill-mode-[both]",
 		details: {
 			logo: "/blue-yonder-logo.svg",
 			paragraph: [
@@ -121,7 +138,7 @@ export const Experience_Data = [
 		date: "July 2018 - Nov 2020",
 		description: "Migration of over 200 legacy software to latest tech-stack",
 		animationClass:
-			"animate-in-from-right animation-delay-100 animation-fill-mode-[both]",
+			"animate-in-from-right animation-delay-300 animation-fill-mode-[both]",
 		details: {
 			logo: "/barclays-logo.png",
 			paragraph: [
@@ -137,7 +154,7 @@ export const Experience_Data = [
 		date: "Dec 2016 - June 2018",
 		description: "Frontend developer at Digitate",
 		animationClass:
-			"animate-in-from-right animation-delay-300 animation-fill-mode-[both]",
+			"animate-in-from-right animation-delay-100 animation-fill-mode-[both]",
 		details: {
 			logo: "/tcs-logo.svg",
 			paragraph: [
